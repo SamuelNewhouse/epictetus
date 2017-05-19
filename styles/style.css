@@ -30,10 +30,23 @@ li, ul {
   padding: 10px;
   margin: 20px;  
   border-radius: 10px;
-} 
+}
+/*  For extra browser support, crops image using technique found at...
+    http://jonathannicol.com/blog/2014/06/16/centre-crop-thumbnails-with-css/
+*/
 .epic-pic {
-  object-fit: cover;
+  position: relative;
   width: 400px;
   height: 400px;
-  border-radius: 10px;
+  overflow: hidden;
+}
+.epic-pic img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }

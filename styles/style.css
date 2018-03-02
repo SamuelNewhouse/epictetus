@@ -1,45 +1,120 @@
 body {
+  background: #fff;
+}
+
+header {
   text-align: center;
-  font-size: 175%;
-  background-color: #f7efe3;
 }
-h1 {  
-  padding-bottom: 20px
+
+h1 {
+  top: -15px;
 }
+
+section {  
+  background: #332525;
+  background: linear-gradient(to top, #332525, #584040);
+  color: #efdecd;
+  padding: 5px 1%;
+  border-radius: 5px;
+  margin: 55px 1%;
+}
+
 h2 {
-  padding-top: 20px;
-  padding-bottom: 20px
-}
-p {
-  font-style: italic;
-}
-div {
   margin: auto;
+  background: #634444;
+  background: linear-gradient(to top, #634444, #7c5555);
+  position: relative;  
+  top: -0.5em;  
+  padding-left: 10px; 
+  border: 1px solid #000;     
+  border-radius: 7px;
+  font-size: 2.5em;
 }
-li, ul {
+
+section:nth-child(3) {
+  background: #25332a;
+  background: linear-gradient(to top, #25332a, #36493d);
+}
+
+section:nth-child(3) h2 {
+  background: #44634b;
+  background: linear-gradient(to top, #44634b, #52775b);
+}
+
+section:nth-child(4) {
+  background: #252933;
+  background: linear-gradient(to top, #252933, #363b49);
+}
+
+section:nth-child(4) h2 {
+  background: #444f63;
+  background: linear-gradient(to top, #444f63, #536079);
+}
+
+section:nth-child(5) {
+  background: #333225;
+  background: linear-gradient(to top, #333225, #52503c);
+  margin-bottom: 5px;
+}
+
+section:nth-child(5) h2 {
+  background: #635d44;
+  background: linear-gradient(to top, #635d44, #756e51);
+}
+
+section, .container, .epic-pic {
+  border-radius: 10px;
+  box-shadow: -1px -1px 3px #ddd,
+              2px 2px 3px #000;
+}
+
+section > p {
+  font-size: 1.5em;
+}
+
+p {
   text-align: left;
 }
-.main-block {
-  background-color: #e7dfd3;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 10px;
-  
+
+ul {
+  padding-left: 5%;  
 }
-.intro-block {
-  background-color: #e1d7c9;
-  padding: 10px;
-  margin: 20px;  
+
+blockquote {  
+  padding: 0 1%;
+  font-style: italic;
+  text-align: left;
+}
+
+.blockquote-footer {
+  text-align: right;
+}
+
+strong {
+  color: #bfd1bf;
+}
+
+.container {
+  padding: 1%;
+  margin: 10px auto;
+  background: #f5ede3;
   border-radius: 10px;
 }
-/*  For extra browser support, crops image using technique found at...
-    http://jonathannicol.com/blog/2014/06/16/centre-crop-thumbnails-with-css/
-*/
+
+.jumbotron {
+  background: #f5ede3;
+  border: 1px solid #ddccbb;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .epic-pic {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
+  margin: 20px auto;  
 }
 .epic-pic img {
   position: absolute;
@@ -50,4 +125,31 @@ li, ul {
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
+}
+
+#influence > ul > li {
+  margin-top: 30px;
+}
+
+#influence > ul > li:nth-child(even){
+  position: relative;
+  left: 1%;    
+}
+
+#influence blockquote {  
+  border-color: #ccc; 
+}
+
+#main-footer {
+  font-size: 1.3em;
+  margin: 25px auto;
+  text-align: center;
+}
+
+a {
+  color: #70b3ff;
+}
+
+a:hover {
+  color: #517fb3;
 }

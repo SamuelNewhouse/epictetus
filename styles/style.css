@@ -1,65 +1,39 @@
 body {
   background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   text-align: center;
 }
 
-h1 {
-  top: -15px;
+h1, h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.02em;
+  word-spacing: 0.07em;
+  color: #f0f0f0;
 }
 
-section {  
-  background: #332525;
-  background: linear-gradient(to top, #332525, #584040);
-  color: #efdecd;
-  padding: 5px 1%;
-  border-radius: 5px;
-  margin: 55px 1%;
+h1 {
+  top: -15px;
+  color: #000;
 }
 
 h2 {
   margin: auto;
-  background: #634444;
-  background: linear-gradient(to top, #634444, #7c5555);
-  position: relative;  
-  top: -0.5em;  
-  padding-left: 10px; 
-  border: 1px solid #000;     
+  position: relative;
+  top: -0.5em;
+  padding-left: 10px;
+  border: 1px solid #000;
   border-radius: 7px;
   font-size: 2.5em;
 }
 
-section:nth-child(3) {
-  background: #25332a;
-  background: linear-gradient(to top, #25332a, #36493d);
-}
-
-section:nth-child(3) h2 {
-  background: #44634b;
-  background: linear-gradient(to top, #44634b, #52775b);
-}
-
-section:nth-child(4) {
-  background: #252933;
-  background: linear-gradient(to top, #252933, #363b49);
-}
-
-section:nth-child(4) h2 {
-  background: #444f63;
-  background: linear-gradient(to top, #444f63, #536079);
-}
-
-section:nth-child(5) {
-  background: #333225;
-  background: linear-gradient(to top, #333225, #52503c);
-  margin-bottom: 5px;
-}
-
-section:nth-child(5) h2 {
-  background: #635d44;
-  background: linear-gradient(to top, #635d44, #756e51);
+section {
+  color: #efdecd;
+  padding: 5px 1%;
+  border-radius: 5px;
+  margin: 55px 1%;
 }
 
 section, .container, .epic-pic {
@@ -69,7 +43,10 @@ section, .container, .epic-pic {
 }
 
 section > p {
-  font-size: 1.5em;
+  font-size: 1.35em;
+  margin-top: -0.3em;
+  margin-bottom: 1.5em;
+  padding-left: 1%;
 }
 
 p {
@@ -77,10 +54,10 @@ p {
 }
 
 ul {
-  padding-left: 5%;  
+  padding-left: 7%;
 }
 
-blockquote {  
+blockquote {
   padding: 0 1%;
   font-style: italic;
   text-align: left;
@@ -92,6 +69,14 @@ blockquote {
 
 strong {
   color: #bfd1bf;
+}
+
+a {
+  color: #70b3ff;
+}
+
+a:hover {
+  color: #517fb3;
 }
 
 .container {
@@ -114,7 +99,7 @@ strong {
   width: 300px;
   height: 300px;
   overflow: hidden;
-  margin: 20px auto;  
+  margin: 20px auto;
 }
 .epic-pic img {
   position: absolute;
@@ -127,17 +112,51 @@ strong {
           transform: translate(-50%,-50%);
 }
 
-#influence > ul > li {
-  margin-top: 30px;
+#life {
+  background: #332525;
+  background: linear-gradient(to top, #332525, #584040);
 }
 
-#influence > ul > li:nth-child(even){
-  position: relative;
-  left: 1%;    
+#life h2 {
+  background: #634444;
+  background: linear-gradient(to top, #634444, #7c5555);
 }
 
-#influence blockquote {  
-  border-color: #ccc; 
+#influence {
+  background: #25332a;
+  background: linear-gradient(to top, #25332a, #36493d);
+}
+
+#influence h2 {
+  background: #44634b;
+  background: linear-gradient(to top, #44634b, #52775b);
+}
+
+#quotes {
+  background: #252933;
+  background: linear-gradient(to top, #252933, #363b49);
+}
+
+#quotes h2 {
+  background: #444f63;
+  background: linear-gradient(to top, #444f63, #536079);
+}
+
+#information {
+  background: #333225;
+  background: linear-gradient(to top, #333225, #52503c);
+  margin-bottom: 5px;
+}
+
+#information h2 {
+  background: #635d44;
+  background: linear-gradient(to top, #635d44, #756e51);
+}
+
+#influence > ul > li:not( :last-child ) {
+  margin-bottom: 30px;
+  border: 2px dotted gray;
+  border-style: none none dotted none;
 }
 
 #main-footer {
@@ -146,10 +165,28 @@ strong {
   text-align: center;
 }
 
-a {
-  color: #70b3ff;
+@media only screen and (max-width: 650px){
+  html {
+    font-size: 0.9rem;
+  }
+  .display-2 {
+    font-size: 4em;
+  }
+  .epic-pic {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-a:hover {
-  color: #517fb3;
+@media only screen and (max-width: 500px){
+  html {
+    font-size: 0.8rem;
+  }
+  .display-2 {
+    font-size: 3.5em;
+  }
+  .epic-pic {
+    width: 200px;
+    height: 200px;
+  }
 }

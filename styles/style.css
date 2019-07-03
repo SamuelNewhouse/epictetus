@@ -57,8 +57,11 @@ ul {
   padding-left: 7%;
 }
 
+li ul {
+  padding-left: 4%;
+}
+
 blockquote {
-  padding: 0 1%;
   font-style: italic;
   text-align: left;
 }
@@ -95,21 +98,9 @@ a:hover {
 }
 
 .epic-pic {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  margin: 20px auto;
-}
-.epic-pic img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
-  width: 100%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+  max-height: 300px;
+  max-width: 100%;
+  margin: 20px auto 5px auto;
 }
 
 #life {
@@ -172,10 +163,6 @@ a:hover {
   .display-2 {
     font-size: 4em;
   }
-  .epic-pic {
-    width: 250px;
-    height: 250px;
-  }
 }
 
 @media only screen and (max-width: 500px){
@@ -184,9 +171,5 @@ a:hover {
   }
   .display-2 {
     font-size: 3.5em;
-  }
-  .epic-pic {
-    width: 200px;
-    height: 200px;
   }
 }
